@@ -57,6 +57,23 @@ namespace CrushKillDestroy
             Assert.Equal(5+5, length);
         }
 
-            
+        // Test Metod nr 2: Summera ihop alla talen i arrayen.
+
+        [Fact]
+        public void nullArray()
+        {
+            //arrange
+            Class2 obj = new Class2();
+            int?[] ints = {null};
+
+            //Act
+           int Count = obj.intLenghts(ints);
+
+            //Assert
+            Assert.Null(ints);
+
+        }
+
+
     }
 }
